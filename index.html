@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B8A3-fruit-brust</title>
+
+    <!-- tailwind and daisy ui-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- lato google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="lg:mx-40 font-family">
+    <header>
+      <section>
+        <nav class="mt-4">
+          <div
+            class="navbar bg-base-100 bg-[#F85559] rounded-full lg:w-[1200px] flex"
+          >
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </label>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li><a>Item 1</a></li>
+                <li><a>Item 3</a></li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Button</a>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section>
+        <div class="carousel w-full mt-11">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="img/banner1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <div class="text-white">
+                <h1
+                  class="text-lg lg:text-6xl text-white font-extrabold text-center"
+                >
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-center text-lg">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="bg-[#F85559] hidden lg:flex mx-80 py-2 px-4 mt-4 rounded-lg font-bold"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="img/banner2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <div class="text-white">
+                <h1
+                  class="text-lg lg:text-6xl text-white font-extrabold text-center"
+                >
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-center text-lg">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="bg-[#F85559] hidden lg:flex mx-80 py-2 px-4 mt-4 rounded-lg font-bold"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="img/banner3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <div class="text-white">
+                <h1
+                  class="text-lg lg:text-6xl text-white font-extrabold text-center"
+                >
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-center text-lg">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="bg-[#F85559] hidden lg:flex mx-80 py-2 px-4 mt-4 rounded-lg font-bold"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="img/banner4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <div class="text-white">
+                <h1
+                  class="text-lg lg:text-6xl text-white font-extrabold text-center"
+                >
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-center text-lg">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="bg-[#F85559] hidden lg:flex mx-80 py-2 px-4 mt-4 rounded-lg font-bold"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white h-[150px] w-[1000px] relative left-[90px] -top-[50px] drop-shadow-[50px] justify-center rounded-md space-x-20 hidden lg:flex"
+        >
+          <div>
+            <img class="w-24 h-24 mt-5" src="img/fruit1.png" alt="" />
+            <p class="relative left-2">Strawberry</p>
+          </div>
+          <div>
+            <img class="w-24 h-24 mt-5" src="img/fruit2.png" alt="" />
+            <p class="relative left-6">Orange</p>
+          </div>
+          <div>
+            <img class="w-24 h-24 mt-5" src="img/fruit3.png" alt="" />
+            <p class="relative left-5">Mango</p>
+          </div>
+          <div>
+            <img class="w-24 h-24 mt-5" src="img/fruit4.png" alt="" />
+            <p class="relative left-4">Strawberry</p>
+          </div>
+          <div>
+            <img class="w-24 h-24 mt-5" src="img/fruit5.png" alt="" />
+            <p class="relative left-6">Mango</p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="flex justify-between">
+        <div>
+          <h2 class="text-[#121212] text-[48px] font-[800]">Deal of the day</h2>
+          <p class="text-[18, 18, 18, 0.60] text-[16px] font-[500]">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical <br />
+            Latin literature from 45 BC, making it over 2000 years old.
+          </p>
+        </div>
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="flex flex-col ">
+            <span class="countdown font-mono text-5xl ">
+              <span class="" style="--value: 15 "></span>
+            </span>
+            days
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 10"></span>
+            </span>
+            hours
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 24"></span>
+            </span>
+            min
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 21"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
