@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B8A3-fruit-brust</title>
+    
+    
 
     <!-- tailwind and daisy ui-->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,56 +29,35 @@
   </head>
   <body class="lg:mx-40 font-family">
     <header>
-      <section>
-        <nav class="mt-4">
-          <div
-            class="navbar bg-base-100 bg-[#F85559] rounded-full lg:w-[1200px] flex"
-          >
-            <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </label>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
-                <li><a>Item 3</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn">Button</a>
-            </div>
+      <nav>
+        <div class="h-20 rounded-full w[auto] bg-[#F85559] mt-5">
+          <ul class="flex text-white relative top-7">
+            <li><a class="mx-2 text-[12px] font-medium" href="">Home</a></li>
+            <li><a class="mx-2 text-[12px] font-medium" href=" ">About Us</a></li>
+            <li><a class="mx-2 text-[12px] font-medium" href="">Shop</a></li>
+            <li><a class="mx-2 text-[12px] font-medium" href="">All Fruits</a></li>
+          </ul>
+          <div class="flex">
+            <img class=" w-10 h-10 relative left-[440px] bottom-1" src="img/logo.png" alt="">
+            <h2 class=" relative left-[450px] top-1 font-medium text-white">Fruit Burst</h2>
           </div>
-        </nav>
-      </section>
-      <section>
+          <div class="mb-3 w-80 relative -right-[690px] bottom-10 ">
+            <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+              <input
+                type="search"
+                class="relative m-0 block w-[1px] min-w-0 flex-auto rounded-full border border-solid border-neutral-300 bg-white bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                placeholder="Search here"
+                aria-label="Search"
+                aria-describedby="button-addon2"/>
+                <button>
+                  <img class="w-10 bg-white rounded-full relative -top-[1px] left-7 ml-0" src="img/Logo/search.png" alt="">
+                </button>
+                
+               
+                
+        </div>
+          </div>
+   </nav>
         <div class="carousel w-full mt-11">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="img/banner1.png" class="w-full" />
@@ -180,7 +161,7 @@
           </div>
         </div>
         <div
-          class="bg-white h-[150px] w-[1000px] relative left-[90px] -top-[50px] drop-shadow-[50px] justify-center rounded-md space-x-20 hidden lg:flex"
+          class="bg-white h-[150px] w-[950px] relative left-[60px] -top-[50px] drop-shadow-[50px] justify-center rounded-md space-x-20 hidden lg:flex"
         >
           <div>
             <img class="w-24 h-24 mt-5" src="img/fruit1.png" alt="" />
@@ -321,35 +302,80 @@
       </div>
       <section>
         <div style="background-image: url(img/team.png);background-repeat: no-repeat; background-size: 1200px 490px ; " class="w[auto] h-[500px] bg-black mt-28">
-          <h2 class="text-center text-white text-5xl font-extrabold relative top-40">Meet the team section</h2>
-          <p class="text-center text-[#FFF] text-[16px] font-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          <h2 class="text-center text-white text-5xl font-extrabold relative top-24">Meet the team section</h2>
+          <p class="text-center text-[#FFF] text-[16px] font-500 relative top-32" >Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
           <div class="flex justify-between mt-40">
-            <div><img class="h-20 w-20 " src="img/member1.png" alt="">
-              <h2 class="text-center text-white">Awlad Hossain</h2>
-              <p class=" text-center text-white">Fruits Expert</p>
+            <div><img class="h-20 w-20 relative left-44" src="img/member1.png" alt="">
+              <h2 class="text-center relative left-40 text-white">Awlad Hossain</h2>
+              <p class=" text-center relative left-40 text-white">Fruits Expert</p>
+              <div class="flex justify-around">
+                <img class=" w-6 h-6 relative left-40" src="img/fb.png" alt="">
+              <img class=" w-6 h-6 relative left-40" src="img/tt.png" alt="">
+              <img class=" w-6 h-6 relative left-40" src="img/in.png" alt="">
+              </div>
+              </div>
+          
+
+            <div><img class="h-20 w-20 relative left-20" src="img/member2.png" alt="">
+              <h2 class="text-center text-white relative left-16">Safia Chowdhury</h2>
+              <p class="text-center relative left-16  text-white">Fruits Expert</p>
+              <div class="flex justify-between w-24 relative left-3 ">
+                <img class=" w-6 h-6 relative left-16" src="img/fb.png" alt="">
+              <img class=" w-6 h-6 relative left-16" src="img/tt.png" alt="">
+              <img class=" w-6 h-6 relative left-16" src="img/in.png" alt="">
+              </div>
             </div>
           
 
-            <div><img class="h-20 w-20 " src="img/member2.png" alt="">
-              <h2 class="text-center text-white">Safia Chowdhury</h2>
-              <p class="text-center text-white">Fruits Expert</p>
+            <div><img class="h-20 w-20 relative -left-10" src="img/member3.png" alt="">
+              <h2 class="text-center text-white relative right-12">Rokib Hossain</h2>
+              <p class="text-center text-white relative right-12">Fruits Expert</p>
+              <div class="flex justify-around ">
+                <img class=" w-6 h-6 relative right-12" src="img/fb.png" alt="">
+              <img class=" w-6 h-6 relative right-12" src="img/tt.png" alt="">
+              <img class=" w-6 h-6 relative right-12" src="img/in.png" alt="">
+              </div>
             </div>
           
 
-            <div><img class="h-20 w-20 " src="img/member3.png" alt="">
-              <h2 class="text-center text-white">Rokib Hossain</h2>
-              <p class="text-center text-white">Fruits Expert</p>
-            </div>
-          
-
-            <div><img class="h-20 w-20 " src="img/member4.png" alt="">
-              <h2 class="text-center text-white">Chaity</h2>
-              <p class="text-center text-white">Fruits Expert</p>
+            <div><img class="h-20 w-20 relative right-[120px] " src="img/member4.png" alt="">
+              <h2 class="text-center text-white relative right-[120px]">Chaity</h2>
+              <p class="text-center text-white relative right-[120px]">Fruits Expert</p>
+              <div class="flex justify-between">
+                <img class=" w-6 h-6 relative right-[120px]" src="img/fb.png" alt="">
+              <img class=" w-6 h-6 relative right-[120px]" src="img/tt.png" alt="">
+              <img class=" w-6 h-6 relative right-[120px]" src="img/in.png" alt="">
+              </div>
             </div>
           </div>
           </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="h-72 w[auto] bg-black">
+        <div class="flex justify-center">
+            <img src="img/logo.png" alt="">
+            <h2 class="text-white">Fruit Burst</h2>
+        </div>
+        <div class="">
+            <ul class=" flex text-white justify-center ">
+                <li><a href=""></a>Home </li>
+                <li><a href=""></a>About Us</li>
+                <li><a href=""></a>Shop</li>
+                <li><a href=""></a>All Fruits</li>
+                <li><a href=""></a>Support</li>
+                <li><a href=""></a>My Account</li>
+            </ul>
+        </div>
+        <div class="flex justify-center relative top-24">
+            <img class="w-10 h-10 mx-1" src="img/Logo/tt.png" alt="">
+            <img class="w-10 h-10 mx-1"  src="img/Logo/fb.webp" alt="">
+            <img class="w-10 h-10 mx-1" src="img/Logo/yt.png" alt="">
+            <img class="w-10 h-10 mx-1" src="img/Logo/in.png">
+            <img class="w-10 h-10 mx-1" src="img/Logo/ins.png" alt="">
+            <img class="w-10 h-10 mx1" src="img/Logo/Apple_logo_black.svg.png">
+        </div>
+    </section>
+    </footer>
   </body>
 </html>
